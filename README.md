@@ -113,7 +113,7 @@ src/
 git clone https://github.com/seu-usuario/portal-produtor-rural.git
 
 # Entre no diretório
-cd portal-produtor-rural/frontend
+cd portal-produtor-rural
 
 # Instale as dependências
 npm install
