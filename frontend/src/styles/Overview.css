@@ -1,0 +1,584 @@
+/* Overview Container */
+.overview-container {
+  padding: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Section Blocks */
+.section-block {
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+}
+
+.section-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--bg-color);
+}
+
+.section-header h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+/* Producer Info Grid */
+.producer-info-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.producer-main-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, var(--bg-color), var(--bg-secondary));
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--border-color);
+}
+
+.producer-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.producer-details h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 1rem 0;
+}
+
+.producer-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.producer-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Score Card */
+.score-card {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+  color: white;
+  border-radius: var(--border-radius-lg);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.score-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: white;
+  font-size: 1rem;
+}
+
+.score-circle {
+  margin-bottom: 1rem;
+}
+
+.score-value {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1;
+  color: white !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.score-card .score-circle .score-value {
+  color: white !important;
+}
+
+.score-display .score-value {
+  color: white !important;
+}
+
+.score-max {
+  font-size: 1.2rem;
+  opacity: 1;
+  margin-top: -0.5rem;
+  color: white !important;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.score-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.score-status {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.score-update {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+  opacity: 0.9;
+  color: white;
+  font-weight: 500;
+}
+
+/* Financial Grid */
+.financial-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.financial-overview-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.financial-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+}
+
+.financial-item.total {
+  background: linear-gradient(135deg, rgb(239 246 255), rgb(219 234 254));
+  border-left-color: var(--primary-color);
+}
+
+.financial-item.negative {
+  background: linear-gradient(135deg, rgb(254 242 242), rgb(252 165 165));
+  border-left-color: var(--danger-color);
+}
+
+.financial-item.protests {
+  background: linear-gradient(135deg, rgb(255 251 235), rgb(253 230 138));
+  border-left-color: var(--warning-color);
+}
+
+.financial-item span {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.financial-item strong {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* Distribution Chart */
+.distribution-card {
+  background: var(--bg-color);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+}
+
+.distribution-card h4 {
+  margin: 0 0 1rem 0;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.distribution-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.distribution-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.distribution-bar {
+  flex: 1;
+  height: 8px;
+  background: var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.distribution-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-color), var(--primary-hover));
+  transition: width 0.3s ease;
+}
+
+.distribution-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  min-width: 120px;
+}
+
+/* Data Tables */
+.data-table {
+  overflow-x: auto;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+}
+
+.data-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.data-table th,
+.data-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.data-table th {
+  background: var(--bg-color);
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.data-table td {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table tr:hover {
+  background: rgba(37, 99, 235, 0.02);
+}
+
+/* Status Badges */
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background: var(--bg-color);
+  border: 1px solid currentColor;
+}
+
+/* Cards Lists */
+.restrictives-list,
+.protests-list,
+.cprs-list,
+.lawsuits-list,
+.car-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Restrictive Cards */
+.restrictive-card,
+.protest-card,
+.cpr-card,
+.lawsuit-card,
+.car-card {
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  transition: var(--transition);
+}
+
+.restrictive-card:hover,
+.protest-card:hover,
+.cpr-card:hover,
+.lawsuit-card:hover,
+.car-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.restrictive-header,
+.protest-header,
+.cpr-header,
+.lawsuit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.warning-icon {
+  color: var(--warning-color);
+}
+
+.danger-icon {
+  color: var(--danger-color);
+}
+
+.restrictive-type,
+.protest-location,
+.lawsuit-number {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.cpr-value {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.cpr-status,
+.lawsuit-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.cpr-status.ativa,
+.lawsuit-status.ativo {
+  background: rgb(220 252 231);
+  color: var(--success-color);
+}
+
+.restrictive-details,
+.protest-details,
+.cpr-details,
+.lawsuit-details,
+.car-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.restrictive-details p,
+.protest-details p,
+.cpr-details p,
+.lawsuit-details p,
+.car-details p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* AI Analysis */
+.lawsuit-ai-analysis {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.lawsuit-ai-analysis h5 {
+  margin: 0 0 0.5rem 0;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.lawsuit-ai-analysis ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.lawsuit-ai-analysis li {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
+}
+
+/* SCR Grid */
+.scr-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.scr-summary,
+.scr-rural-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.scr-item,
+.scr-rural-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--bg-color);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+}
+
+.scr-rural {
+  background: var(--bg-color);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+}
+
+.scr-rural h4 {
+  margin: 0 0 1rem 0;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Compliance Grid */
+.compliance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.compliance-category {
+  background: var(--bg-color);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+}
+
+.compliance-category h4 {
+  margin: 0 0 1rem 0;
+  color: var(--text-primary);
+  font-weight: 600;
+  text-align: center;
+}
+
+.compliance-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.compliance-item:last-child {
+  border-bottom: none;
+}
+
+.compliance-status {
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+/* Car Cards */
+.car-card h4 {
+  margin: 0 0 1rem 0;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .producer-info-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .financial-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .scr-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .overview-container {
+    padding: 0.5rem;
+  }
+  
+  .section-block {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .producer-main-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .producer-meta {
+    align-items: center;
+  }
+  
+  .compliance-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .data-table {
+    font-size: 0.8rem;
+  }
+  
+  .restrictive-header,
+  .protest-header,
+  .cpr-header,
+  .lawsuit-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-header h2 {
+    font-size: 1.2rem;
+  }
+  
+  .score-value {
+    font-size: 2.5rem;
+  }
+  
+  .producer-details h3 {
+    font-size: 1.25rem;
+  }
+  
+  .financial-item {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+} 
